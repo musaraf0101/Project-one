@@ -1,11 +1,10 @@
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12">
-            <h3>This is the app component</h3>
-        </div>
-    </div>
-</div>
+<p>my name is {{ name }}</p>
+<p>my age is {{ age }}</p>
+<p>my city is {{ getCity() }}</p>
 
-<h1>First app</h1>
-<hr>
-<app-server></app-server>
+<button class="btn btn-primary" [disabled]="isDisabled">Click me</button>
+<br><br>
+<label for=""><input type="text" [value]="searchValue"></label><br>
+<label for=""><input type="text" [value]="HI"></label>
+
+<label for=""><input type="text"[value]="test"></label>

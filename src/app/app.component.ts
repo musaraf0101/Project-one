@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name="musaraf";
+  name : String="musaraf";
+  age:number=10;
+
+  getCity(){
+    return 'Trinco';
+  }
+
+  isDisabled:boolean=true;
+  searchValue:String="Hi";
+  HI:String="Hi it's testing";
+  test:String="testing it"
 }
