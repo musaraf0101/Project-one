@@ -16,3 +16,6 @@
 <p>{{ name }}</p>
 <!------we can use directly assign value------>
 <button class="btn btn-danger"(click)="name='jaseema';">click</button>
+
+<input type="text" (input)="changeSchool($event)">
+<p>{{ school }}</p>

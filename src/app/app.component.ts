@@ -21,4 +21,11 @@ export class AppComponent {
   changeName(){
     this.name="nowsath";
   }
+
+  school:String="Aqsha";
+
+  changeSchool(event:Event){
+    
+    this.school=(<HTMLInputElement>event.target).value;
+  }
 }
