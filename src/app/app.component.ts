@@ -17,4 +17,8 @@ export class AppComponent {
   searchValue:String="Hi";
   HI:String="Hi it's testing";
   test:String="testing it"
+
+  changeName(){
+    this.name="nowsath";
+  }
 }

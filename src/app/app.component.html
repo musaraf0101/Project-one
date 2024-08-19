@@ -8,3 +8,11 @@
 <label for=""><input type="text" [value]="HI"></label>
 
 <label for=""><input type="text"[value]="test"></label>
+
+<p [innerText]="name"></p>
+
+<!---function use----->
+<button class="btn btn-danger" (click)="changeName()">change</button>
+<p>{{ name }}</p>
+<!------we can use directly assign value------>
+<button class="btn btn-danger"(click)="name='jaseema';">click</button>
