@@ -28,4 +28,20 @@ export class AppComponent {
     
     this.school=(<HTMLInputElement>event.target).value;
   }
+
+  car:String="black";
+
+  btnDisabled:boolean=true;
+  animal!:String;
+  text:string="No name add"
+
+  constructor(){
+    setTimeout(()=>{
+      this.btnDisabled=false;
+    },3000)
+  }
+  addanimal(){
+    this.text="Your name is"+" " +this.animal;
+  }
+  ship!:string;
 }

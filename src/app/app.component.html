@@ -15,7 +15,20 @@
 <button class="btn btn-danger" (click)="changeName()">change</button>
 <p>{{ name }}</p>
 <!------we can use directly assign value------>
-<button class="btn btn-danger"(click)="name='jaseema';">click</button>
+<button class="btn btn-danger"(click)="name='perro';">click</button>
 
+<!------event binding-->
 <input type="text" (input)="changeSchool($event)">
 <p>{{ school }}</p>
+
+<!--another way to two way binding-->
+<input type="text" [(ngModel)]="car" [ngModelOptions]="{standalone:true}">
+<p>{{ car }}</p>
+
+<input type="text" [(ngModel)]="animal">
+<button class="btn btn-primary" (click)="addanimal()" [disabled]="btnDisabled">Add</button>
+<p>{{ text }}</p>
+
+<input type="text" [(ngModel)]="ship" [ngModelOptions]="{standalone:true}">
+<button class="btn btn-primary" [disabled]="ship==''" (click)="ship=''">Reset</button>
+<p>{{ ship }}</p>
